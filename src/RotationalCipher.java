@@ -12,7 +12,7 @@ public class RotationalCipher {
     public static String cipher(String string, int rotation) {
         StringBuilder cipheredWord = new StringBuilder();
         for (int i = 0; i < string.length(); i++) {
-            int ascii = (int) string.charAt(i);
+            int ascii = string.charAt(i);
             if (ascii == 46) {
                 cipheredWord.append(".");
             } else if (ascii < maxUpperCaseAscii && ascii >= minUpperCaseAscii) {
