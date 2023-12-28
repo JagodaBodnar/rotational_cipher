@@ -21,7 +21,7 @@ public class RotationalCipher {
                 cipheredWord.append(RotationalCipher.transform(ascii, rotation, maxLowerCaseAscii, minLowerCaseAscii));
             }
             else{
-                cipheredWord.append(" ");
+                cipheredWord.append(string.charAt(i));
             }
         }
         return cipheredWord.toString();
